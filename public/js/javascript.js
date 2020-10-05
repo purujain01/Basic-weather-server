@@ -9,7 +9,7 @@ formelement.addEventListener('submit',(e)=>{
     m2.textContent = ''
     e.preventDefault()
     const value=search.value
-    fetch('http://localhost:3000/weather?address='+value).then((response)=>{
+    fetch('/weather?address='+value).then((response)=>{
     response.json().then((data)=>{
         if(data.error){
              m1.textContent = data.error
