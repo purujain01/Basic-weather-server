@@ -8,7 +8,7 @@ const forecasting=(longitude,latitude,callback)=>{
         }else if(body.message){
             callback('Incorrect url',undefined)
         }else{
-            callback(undefined,body.main.temp+' '+ body.weather[0].description)
+            callback(undefined,body.main.temp+' and '+ body.weather[0].description + ' with lowest temp of '+ body.main.temp_min + ' and highest temp of ' + body.main.temp_max)
         }
     })
 

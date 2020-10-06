@@ -22,7 +22,7 @@ app.use(express.static(pathdir))
 app.get('',(req,res)=>{
     res.render('index1',{
         title:'Weather',
-        conclusion:'No'
+        conclusion:'Created by Puru Jain'
     })
 })
 
@@ -30,7 +30,7 @@ app.get('',(req,res)=>{
 app.get('/about',(req,res)=>{
     res.render('index2',{
         title:'About Me',
-        conclusion:'YES'
+        conclusion:'Created by Puru Jain'
     })
 })
 
